@@ -169,7 +169,7 @@ app.post('/wxCode', function (req, res) {
 //     poolSize: 10
 // };
 //数据库连接
-global.dbHandler = require('./module/dbHandler');
+global.dbHandler = require('./module/dbhandler');
 global.db = mongoose.connect("mongodb://localhost:27017/userInfo", {
     useNewUrlParser: true,
     auto_reconnect: true,
